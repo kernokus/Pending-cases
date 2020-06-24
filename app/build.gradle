@@ -2,6 +2,7 @@ apply plugin: 'com.android.application'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
 
+
 android {
     compileSdkVersion 29
     buildToolsVersion "29.0.3"
@@ -10,12 +11,15 @@ android {
         applicationId "com.example.testapplication"
         minSdkVersion 16
         targetSdkVersion 29
-
+        multiDexEnabled true
         apply plugin: 'kotlin-kapt'
         versionCode 1
         versionName "1.0"
         vectorDrawables.useSupportLibrary = true
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+//        jackOptions {
+//            enabled true
+//        }
     }
 
     buildTypes {
@@ -56,5 +60,14 @@ dependencies {
     implementation 'com.jcraft:jsch:0.1.55'
     implementation 'androidx.recyclerview:recyclerview:1.1.0'
     implementation 'com.google.android.material:material:1.1.0'
+    //rx
+//    implementation 'io.reactivex.rxjava3:rxandroid:3.0.0'
+//    implementation 'io.reactivex.rxjava3:rxjava:3.0.0'
+    implementation 'com.jakewharton.rxbinding4:rxbinding:4.0.0'
+    implementation 'com.jakewharton.rxbinding4:rxbinding-material:4.0.0'
+//    implementation("io.reactivex.rxjava3:rxkotlin:3.0.0")
+    def multidex_version = "2.0.1"
+    implementation "androidx.multidex:multidex:$multidex_version"
+
 
 }

@@ -7,7 +7,7 @@
     android:background="@color/colorBlack">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/tittle"
         style="@style/MainTextStyle"
         android:layout_marginBottom="8dp"
         android:text="@string/pending_cases"
@@ -23,7 +23,7 @@
         app:layout_constraintBottom_toTopOf="@+id/add_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/textView" />
+        app:layout_constraintTop_toBottomOf="@+id/tittle" />
 
     <ImageView
         android:id="@+id/add_content"

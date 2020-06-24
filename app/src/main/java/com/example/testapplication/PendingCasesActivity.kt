@@ -1,38 +1,37 @@
 package com.example.testapplication
 
 import android.os.Bundle
-import android.widget.ImageView
-import android.widget.LinearLayout
+import android.view.View
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.ConstraintLayout
 import androidx.recyclerview.widget.LinearLayoutManager
-import androidx.recyclerview.widget.RecyclerView
-import butterknife.BindView
 import butterknife.ButterKnife
 import butterknife.OnClick
+import com.jakewharton.rxbinding4.view.clicks
+import io.reactivex.rxjava3.core.Observable
+import kotlinx.android.synthetic.main.pending_cases.*
+
 
 class PendingCasesActivity : AppCompatActivity() {
-
-    @BindView(R.id.recycler_pending)
-    @JvmField
-    var recyclerView: RecyclerView? = null
-
-    @BindView(R.id.constrain_pending_cases)
-    @JvmField
-    var btnAdd: ImageView? = null
-    
+    lateinit var myAdapter :AdapterPendingCases
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.pending_cases)
         ButterKnife.bind(this);
-        recyclerView?.layoutManager =LinearLayoutManager(this)
-        val items: ArrayList<String> = arrayListOf("1","2","3","4","1","2","3","4","1","2","3","4")
-        val myAdapter=AdapterPendingCases(items)
-        recyclerView?.adapter =myAdapter
+        recycler_pending.layoutManager =LinearLayoutManager(this)
+        val items: ArrayList<String> = arrayListOf()
+        myAdapter=AdapterPendingCases(items)
+        recycler_pending?.adapter =myAdapter
+
+
     }
+
+    @OnClick(R.id.add_content)
+    fun clickAddItem(view:View?) {
+        myAdapter.addAndUpdate("alo")
+    }
+
+
+
+
 }
-//
-//@OnClick(R.id.add_content)
-//fun addItem() {
-//
-//}
+

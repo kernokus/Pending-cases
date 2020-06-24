@@ -35,7 +35,7 @@ class AdapterPendingCases(private val values:ArrayList<String>):RecyclerView.Ada
              var deleteItem: ImageView? = null
 
          fun bind(item:String) {
-            briefDescription?.text=item
+             briefDescription?.text=item
              val date = getCurrentDateTime()
              val dateInString = date.toString("yyyy/MM/dd HH:mm:ss")
              currData?.text= dateInString
@@ -55,15 +55,7 @@ class AdapterPendingCases(private val values:ArrayList<String>):RecyclerView.Ada
          fun deleteAndUpdate(view:View?) {
              Timber.d("DEBUG CLICK")
              delAndUpdate(adapterPosition)
-
-//             values.removeAt(adapterPosition)
-          //   notifyDataSetChanged()
          }
-//        fun deleteClick(View: View) {
-//            values.removeAt(adapterPosition)
-//            notifyDataSetChanged()
-//        }
-
      }
 
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): PendingCasesViewHolder{
@@ -78,6 +70,12 @@ class AdapterPendingCases(private val values:ArrayList<String>):RecyclerView.Ada
         values.removeAt(position)
         notifyDataSetChanged()
     }
+
+    fun addAndUpdate(item: String) {
+        values.add(item)
+        notifyDataSetChanged()
+    }
+
 
 
 
