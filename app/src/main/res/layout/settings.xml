@@ -22,15 +22,18 @@
         app:layout_constraintGuide_percent="0.2" />
 
     <TextView
+        style="@style/textWithBorder"
         android:id="@+id/language"
-        style="@style/MainTextStyle"
+        android:padding="20dp"
         android:text="@string/language"
+        android:background="@drawable/style_main_buttons"
         app:layout_constraintBottom_toTopOf="@+id/gl_hor_1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.5">
+        app:layout_constraintVertical_bias="0.5"
+        >
     </TextView>
 
     <androidx.constraintlayout.widget.Guideline
@@ -38,12 +41,14 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
-        app:layout_constraintGuide_percent="0.4" />
+        app:layout_constraintGuide_percent="0.35" />
 
     <TextView
+        style="@style/textWithBorder"
         android:id="@+id/theme"
-        style="@style/MainTextStyle"
+        android:padding="20dp"
         android:text="@string/Theme"
+        android:background="@drawable/style_main_buttons"
         app:layout_constraintBottom_toTopOf="@+id/gl_hor_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.1"

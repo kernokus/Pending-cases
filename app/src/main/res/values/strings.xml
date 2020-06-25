@@ -14,5 +14,8 @@
     <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
     <string name="language">Language</string>
     <string name="Theme">Color theme</string>
+    <string name="cancel">Cancel</string>
+    <string name="save">Save</string>
+    <string name="tittlePendingDialog">Enter tour pending cases</string>
 
 </resources>

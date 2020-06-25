@@ -28,6 +28,7 @@
         style="@style/MainTextStyle"
         android:layout_marginStart="4dp"
         android:layout_marginLeft="4dp"
+        android:maxHeight="20dp"
 
         android:layout_marginTop="8dp"
         android:text="Description"

@@ -1,16 +1,12 @@
 package com.example.testapplication
 
-import android.R.layout
 import android.content.Intent
 import android.os.Bundle
 import android.view.View
-import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
-import androidx.constraintlayout.widget.ConstraintLayout
-import butterknife.BindView
 import butterknife.ButterKnife
 import butterknife.OnClick
-import timber.log.Timber
+
 
 
 class MainActivity : AppCompatActivity() {

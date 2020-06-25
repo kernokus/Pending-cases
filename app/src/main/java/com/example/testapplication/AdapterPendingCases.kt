@@ -15,7 +15,7 @@ import java.util.*
 import kotlin.collections.ArrayList
 
 
-class AdapterPendingCases(private val values:ArrayList<String>):RecyclerView.Adapter<AdapterPendingCases.PendingCasesViewHolder>() {
+class AdapterPendingCases(private val values:ArrayList<PendingCase>):RecyclerView.Adapter<AdapterPendingCases.PendingCasesViewHolder>() {
     override fun getItemCount()=values.size
 
      inner class PendingCasesViewHolder constructor(itemView: View):RecyclerView.ViewHolder(itemView) {
@@ -34,22 +34,10 @@ class AdapterPendingCases(private val values:ArrayList<String>):RecyclerView.Ada
              @JvmField
              var deleteItem: ImageView? = null
 
-         fun bind(item:String) {
-             briefDescription?.text=item
-             val date = getCurrentDateTime()
-             val dateInString = date.toString("yyyy/MM/dd HH:mm:ss")
-             currData?.text= dateInString
+         fun bind(item: PendingCase) {
+             briefDescription?.text=item.description
+             currData?.text= item.data
         }
-
-         private fun Date.toString(format: String, locale: Locale = Locale.getDefault()): String {
-             val formatter = SimpleDateFormat(format, locale)
-             return formatter.format(this)
-         }
-
-         private fun getCurrentDateTime(): Date {
-             return Calendar.getInstance().time
-         }
-
 
          @OnClick(R.id.deleteItem)
          fun deleteAndUpdate(view:View?) {
@@ -71,12 +59,20 @@ class AdapterPendingCases(private val values:ArrayList<String>):RecyclerView.Ada
         notifyDataSetChanged()
     }
 
-    fun addAndUpdate(item: String) {
+    fun addAndUpdate(item: PendingCase) {
         values.add(item)
         notifyDataSetChanged()
     }
 
+    fun  getlistValues(): ArrayList<PendingCase> {
+        return values
+    }
 
+    fun addList(items:List<PendingCase>) {
+        values.addAll(items)
+    }
+
+    fun getSizeListRV(): Int {return values.size}
 
 
 }
