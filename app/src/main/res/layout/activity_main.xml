@@ -58,7 +58,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/Constrain3"
+        android:id="@+id/constrainML"
         android:layout_width="160dp"
         android:layout_height="175dp"
         android:background="@drawable/style_main_buttons"
@@ -66,6 +66,51 @@
         app:layout_constraintEnd_toStartOf="@+id/gl_ver_2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/gl_hor_1">
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_hor_1_in_3_constraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.54" />
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_hor_2_in_3_constraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.15" />
+        <ImageView
+            android:layout_width="0dp"
+            android:layout_height="0dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginRight="16dp"
+            app:layout_constraintBottom_toTopOf="@+id/gl_hor_1_in_3_constraint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/gl_hor_2_in_3_constraint"
+            app:srcCompat="@drawable/ic_event" />
+
+        <TextView
+            android:id="@+id/temp1"
+            style="@style/MainTextStyle"
+            android:text="@string/tasks"
+            app:layout_constraintBottom_toTopOf="@+id/gl_hor_3_in_3_constraint"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/gl_hor_1_in_3_constraint">
+        </TextView>
+
+        <androidx.constraintlayout.widget.Guideline
+            android:id="@+id/gl_hor_3_in_3_constraint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintGuide_percent="0.78" />
+
+
+
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout

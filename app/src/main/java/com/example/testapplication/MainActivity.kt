@@ -16,7 +16,7 @@ class MainActivity : AppCompatActivity() {
         ButterKnife.bind(this);
     }
 
-    @OnClick(R.id.constrain_pending_cases,R.id.constrain_tasks,R.id.constrain_settings)
+    @OnClick(R.id.constrain_pending_cases,R.id.constrain_tasks,R.id.constrain_settings,R.id.constrainML)
     fun clickItem(view: View?) {
         when(view?.id) {
             R.id.constrain_pending_cases -> {
@@ -27,6 +27,10 @@ class MainActivity : AppCompatActivity() {
                   val intentSettings = Intent(this, SettingsActivity::class.java)
                   startActivity(intentSettings)
               }
+            R.id.constrainML -> {
+                val intentSettings = Intent(this, MLActivity::class.java)
+                startActivity(intentSettings)
+            }
 
             }
         }

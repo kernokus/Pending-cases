@@ -9,7 +9,7 @@ android {
 
     defaultConfig {
         applicationId "com.example.testapplication"
-        minSdkVersion 16
+        minSdkVersion 21
         targetSdkVersion 29
         multiDexEnabled true
         apply plugin: 'kotlin-kapt'
@@ -68,6 +68,18 @@ dependencies {
 //    implementation("io.reactivex.rxjava3:rxkotlin:3.0.0")
     def multidex_version = "2.0.1"
     implementation "androidx.multidex:multidex:$multidex_version"
+
+    //
+    implementation 'com.google.mlkit:object-detection:16.0.0'
+
+    //camera X
+    def camerax_version = "1.0.0-beta03"
+// CameraX core library using camera2 implementation
+    implementation "androidx.camera:camera-camera2:$camerax_version"
+// CameraX Lifecycle Library
+    implementation "androidx.camera:camera-lifecycle:$camerax_version"
+// CameraX View class
+    implementation "androidx.camera:camera-view:1.0.0-alpha10"
 
 
 }
