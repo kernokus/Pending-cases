@@ -90,12 +90,12 @@
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="@+id/gl_hor_2_in_3_constraint"
-            app:srcCompat="@drawable/ic_event" />
+            app:srcCompat="@drawable/ic_photo_camerax" />
 
         <TextView
             android:id="@+id/temp1"
             style="@style/MainTextStyle"
-            android:text="@string/tasks"
+            android:text="@string/cameraX"
             app:layout_constraintBottom_toTopOf="@+id/gl_hor_3_in_3_constraint"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"

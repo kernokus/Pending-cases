@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">TestApplication</string>
+    <string name="tasks">Задачи</string>
+    <string name="pending_cases">Отложенные дела</string>
+    <string name="settings">Настройки</string>
+    <string name="title_activity_main2">MainActivity</string>
+    <string name="language">Язык</string>
+    <string name="Theme">Цветовая тема</string>
+    <string name="cancel">Отменить</string>
+    <string name="save">Сохранить</string>
+    <string name="tittlePendingDialog">Определите ваше отложенное дело</string>
+    <string name="take_photo">Сделать фото</string>
+    <string name="cameraX">Камера</string>
+</resources>
