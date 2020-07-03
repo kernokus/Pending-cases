@@ -4,7 +4,8 @@ import android.app.AlertDialog
 import java.text.SimpleDateFormat
 import java.util.*
 
-class PendingCase(_description:String?, _data:Date?) {
+class PendingCase(_description:String?, _data:Date?,_fullDescription:String?) {
+    val fullDescription=_fullDescription
     var description=_description
     var data=getCurrentDateTime().toString("yyyy/MM/dd HH:mm:ss")
 

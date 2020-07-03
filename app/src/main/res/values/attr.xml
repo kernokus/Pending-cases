@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <attr name="mainImageColor" format="reference|color" />
+    <attr name="backgroundPendingCase" format="reference" />
+
+
+
+
+
+</resources>

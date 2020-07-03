@@ -12,4 +12,13 @@
     <string name="tittlePendingDialog">Определите ваше отложенное дело</string>
     <string name="take_photo">Сделать фото</string>
     <string name="cameraX">Камера</string>
+    <string name="delete">Удалить</string>
+    <string name="view_all_the_information">Просмотреть всю информацию</string>
+    <string name="brief_description">Краткое описание</string>
+    <string name="full_description">Полное описание</string>
+    <string name="do_not_enter_anything">Необходимо указать хотя бы краткое описание</string>
+    <string name="Russian">Русский</string>
+    <string name="English">Английский</string>
+    <string name="dark_theme">Тёмная тема</string>
+    <string name="light_theme">Светлая тема</string>
 </resources>

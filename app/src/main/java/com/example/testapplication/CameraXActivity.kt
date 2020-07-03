@@ -8,12 +8,11 @@ import android.util.SparseIntArray
 import android.view.Surface
 import android.widget.Toast
 import androidx.annotation.RequiresApi
-import androidx.appcompat.app.AppCompatActivity
 import androidx.camera.core.*
 import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
-import kotlinx.android.synthetic.main.activity_ml.*
+import kotlinx.android.synthetic.main.activity_camera.*
 import timber.log.Timber
 import java.io.File
 import java.text.SimpleDateFormat
@@ -22,7 +21,7 @@ import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
 
-class MLActivity: AppCompatActivity() {
+class CameraXActivity:BaseActivity() {
     companion object {
         private const val FILENAME_FORMAT = "yyyy-MM-dd-HH-mm-ss-SSS"
         private const val REQUEST_CODE_PERMISSIONS = 10
@@ -43,10 +42,10 @@ class MLActivity: AppCompatActivity() {
         ORIENTATIONS.append(Surface.ROTATION_180, 270)
         ORIENTATIONS.append(Surface.ROTATION_270, 180)
     }
-
+//
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_ml)
+        setContentView(R.layout.activity_camera)
         // Request camera permissions
         if (allPermissionsGranted()) {
             startCamera()

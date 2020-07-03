@@ -19,7 +19,7 @@
         </activity>
         <activity android:name=".PendingCasesActivity" />
         <activity android:name=".SettingsActivity" />
-        <activity android:name=".MLActivity" />
+        <activity android:name=".CameraXActivity" />
 
     </application>
 

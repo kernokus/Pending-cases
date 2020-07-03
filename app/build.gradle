@@ -33,7 +33,11 @@ android {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
     }
-
+    bundle {
+        language {
+            enableSplit = false
+        }
+    }
 }
 
 dependencies {
@@ -80,6 +84,7 @@ dependencies {
     implementation "androidx.camera:camera-lifecycle:$camerax_version"
 // CameraX View class
     implementation "androidx.camera:camera-view:1.0.0-alpha10"
-
+//для комфортной работы с локализацией
+    implementation 'com.zeugmasolutions.localehelper:locale-helper-android:1.0.3'
 
 }

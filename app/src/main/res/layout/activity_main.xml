@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/colorBlack"
+    android:background="?android:attr/background"
     tools:context=".MainActivity">
 
     <androidx.constraintlayout.widget.Guideline
@@ -58,7 +58,7 @@
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout
-        android:id="@+id/constrainML"
+        android:id="@+id/constrain_camera_x"
         android:layout_width="160dp"
         android:layout_height="175dp"
         android:background="@drawable/style_main_buttons"
@@ -94,7 +94,7 @@
 
         <TextView
             android:id="@+id/temp1"
-            style="@style/MainTextStyle"
+            style="?android:attr/textViewStyle"
             android:text="@string/cameraX"
             app:layout_constraintBottom_toTopOf="@+id/gl_hor_3_in_3_constraint"
             app:layout_constraintEnd_toEndOf="parent"
@@ -151,7 +151,7 @@
 
         <TextView
             android:id="@+id/temp"
-            style="@style/MainTextStyle"
+            style="?android:attr/textViewStyle"
             android:text="@string/tasks"
             app:layout_constraintBottom_toTopOf="@+id/gl_hor_3_in_4_constraint"
             app:layout_constraintEnd_toEndOf="parent"
@@ -203,7 +203,7 @@
             app:layout_constraintTop_toTopOf="@+id/gl_hor_2_in_5_constraint"
             app:srcCompat="@drawable/ic_pending_cases" />
         <TextView
-            style="@style/MainTextStyle"
+            style="?android:attr/textViewStyle"
             android:text="@string/pending_cases"
             app:layout_constraintBottom_toTopOf="@+id/gl_hor_3_in_5_constraint"
             app:layout_constraintEnd_toEndOf="parent"
@@ -257,7 +257,7 @@
 
 
         <TextView
-            style="@style/MainTextStyle"
+            style="?android:attr/textViewStyle"
             android:text="@string/settings"
             app:layout_constraintBottom_toTopOf="@+id/gl_hor_3_in_6_constraint"
             app:layout_constraintEnd_toEndOf="parent"

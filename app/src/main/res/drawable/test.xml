@@ -13,7 +13,7 @@
                     android:width="3dp"
                     android:color="@color/yellow" />
                 <corners android:radius="@dimen/main_border_radius" />
-                <solid android:color="@android:color/black" />
+                <solid android:color="?android:attr/background" />
             </shape>
         </inset>
     </item>

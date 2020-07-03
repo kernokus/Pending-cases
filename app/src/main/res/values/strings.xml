@@ -12,5 +12,14 @@
     <string name="tittlePendingDialog">Enter tour pending cases</string>
     <string name="take_photo">Take photo</string>
     <string name="cameraX">Camera X</string>
+    <string name="delete">Delete</string>
+    <string name="view_all_the_information">View all the information</string>
+    <string name="brief_description">Brief description</string>
+    <string name="full_description">Full description</string>
+    <string name="do_not_enter_anything">Provide at least a brief description</string>
+    <string name="Russian">Russian</string>
+    <string name="English">English</string>
+    <string name="dark_theme">Dark</string>
+    <string name="light_theme">Light</string>
 
 </resources>
