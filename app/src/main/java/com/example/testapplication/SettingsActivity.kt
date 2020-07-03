@@ -1,41 +1,42 @@
 package com.example.testapplication
 import android.app.Dialog
 import android.os.Bundle
-import android.util.Log
 import android.view.MenuItem
 import android.view.View
 import android.widget.Button
 import androidx.appcompat.widget.PopupMenu
 import butterknife.ButterKnife
 import butterknife.OnClick
+import kotlinx.android.synthetic.main.activity_settings.*
 import java.util.*
 
 
 class SettingsActivity: BaseActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
-       Log.i("Настройки до инстал", loadFromSP(THEME_COLOR))
-        installTheme(THEME_COLOR) //установка темы
-        Log.d("Настройки после инстал",loadFromSP(THEME_COLOR))
+        installTheme(THEME_COLOR)
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.settings)
+        setContentView(R.layout.activity_settings)
         ButterKnife.bind(this)
     }
 
 
-    @OnClick(R.id.LanguageConstraint,R.id.ColorConstraint)
+    @OnClick(R.id.LanguageConstraint,R.id.ColorConstraint,R.id.aboutApp)
     fun click(view : View?) {
         when(view?.id) {
             R.id.LanguageConstraint -> {
                 showLanguageMenu(view)
             }
             R.id.ColorConstraint ->{showThemeMenu(view)}
+            R.id.aboutApp -> {
+                showHide(briefAbbApp)
+                showHide(tittleAbApp)
+            }
         }
     }
 
-
     private fun showLanguageMenu(view: View) {
-        val popup: PopupMenu = PopupMenu(this, view) //проверить
+        val popup = PopupMenu(this, view) //проверить
         popup.inflate(R.menu.language_menu)
         popup.setOnMenuItemClickListener { item: MenuItem? ->
             when (item!!.itemId) {
@@ -52,7 +53,7 @@ class SettingsActivity: BaseActivity() {
     }
 
     private fun showThemeMenu(view: View) {
-        val popup: PopupMenu = PopupMenu(this, view) //проверить
+        val popup = PopupMenu(this, view) //проверить
         popup.inflate(R.menu.theme_menu)
         popup.setOnMenuItemClickListener { item: MenuItem? ->
             when (item!!.itemId) {

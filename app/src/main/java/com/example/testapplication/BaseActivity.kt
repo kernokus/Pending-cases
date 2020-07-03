@@ -4,13 +4,19 @@ import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.util.Log
+import android.view.View
 import com.zeugmasolutions.localehelper.LocaleAwareCompatActivity
 
 open class BaseActivity : LocaleAwareCompatActivity() {
     companion object {
-        val THEME_COLOR = "themeColor"
-        val DARK_THEME = "darkTheme"
-        val LIGHT_THEME = "LightTheme"
+        const val THEME_COLOR = "themeColor"
+        const val DARK_THEME = "darkTheme"
+        const val LIGHT_THEME = "LightTheme"
+        const val DATA = "data"
+        const val DESCRIPTION = "description"
+        const val BRIEF_DESCRIPTION = "briefDescription"
+        const val SAVED_ITEMS = "savedItems"
+
     }
 
 
@@ -40,6 +46,14 @@ open class BaseActivity : LocaleAwareCompatActivity() {
         intentReboot.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP)
         intentReboot.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK)
         startActivity(intentReboot)
+    }
+
+    fun showHide(view: View) {
+        view.visibility = if (view.visibility == View.VISIBLE) {
+            View.INVISIBLE
+        } else{
+            View.VISIBLE
+        }
     }
 
 

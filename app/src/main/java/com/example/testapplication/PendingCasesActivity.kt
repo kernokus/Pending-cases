@@ -4,7 +4,6 @@ import android.app.Dialog
 import android.content.Context
 import android.content.SharedPreferences.Editor
 import android.os.Bundle
-import android.util.Log
 import android.view.View
 import android.widget.Button
 import android.widget.EditText
@@ -13,26 +12,19 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import butterknife.ButterKnife
 import butterknife.OnClick
 import com.google.gson.Gson
-import kotlinx.android.synthetic.main.pending_cases.*
-
-
+import kotlinx.android.synthetic.main.activity_pending_cases.*
 /*
-Cписок отложенных пользователем дел с датой их установки
+ Cписок отложенных пользователем дел с датой их установки
 Сохранение списка с помощью sharedPreference
 */
 class PendingCasesActivity : BaseActivity() {
     private lateinit var myAdapter :AdapterPendingCases
-    private val SAVED_ITEMS = "savedItems"
-
 
     override fun onCreate(savedInstanceState: Bundle?) {
-        if (loadFromSP(THEME_COLOR)==null || loadFromSP(THEME_COLOR)=="") Log.i("Настройки null", loadFromSP(THEME_COLOR))
-        Log.i("Настройки до", loadFromSP(THEME_COLOR))
         installTheme(THEME_COLOR)
-        Log.i("Настройки после", loadFromSP(THEME_COLOR))
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.pending_cases)
-        ButterKnife.bind(this);
+        setContentView(R.layout.activity_pending_cases)
+        ButterKnife.bind(this)
         recycler_pending.layoutManager =LinearLayoutManager(this)
         val items: ArrayList<PendingCase> = arrayListOf()
         myAdapter=AdapterPendingCases(items)
@@ -62,7 +54,6 @@ class PendingCasesActivity : BaseActivity() {
 
     private fun showDialog() {
         val dialog = Dialog(this)
-        dialog.setTitle("Hello")
         dialog.setContentView(R.layout.pending_dialog)
         val inputCase:EditText=dialog.findViewById(R.id.editText)
         val inputCaseFull:EditText=dialog.findViewById(R.id.editText2)

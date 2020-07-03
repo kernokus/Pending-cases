@@ -2,73 +2,37 @@
 <androidx.constraintlayout.widget.ConstraintLayout
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:background="@drawable/pending_underline"
-    android:layout_marginBottom="16dp"
+    android:layout_marginBottom="8dp"
     android:layout_marginTop="5dp"
-    android:layout_height="wrap_content"
-    android:layout_marginLeft="5dp">
-
-
+    android:layout_height="50dp"
+    android:layout_marginStart="5dp">
     <TextView
-
         android:id="@+id/textView3"
         style="?android:attr/textViewStyle"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:text="Description:"
+        android:layout_marginStart="4dp"
+        android:text="@string/Description"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.357">
 
     </TextView>
-
 
     <TextView
         android:id="@+id/briefDescription"
         style="?android:attr/textViewStyle"
         android:layout_marginStart="4dp"
-        android:layout_marginTop="8dp"
         android:layout_marginEnd="8dp"
-        android:maxHeight="20dp"
         android:gravity="start"
-        android:text="Description"
-        android:layout_width="0dp"
+
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toStartOf="@+id/gl_ver_2"
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/textView3"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <TextView
-        android:id="@+id/textView2"
-        style="?android:attr/textViewStyle"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-
-        android:layout_marginBottom="8dp"
-        android:text="Installation date:"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintStart_toStartOf="parent">
-
-    </TextView>
-
-    <TextView
-        android:id="@+id/currData"
-        style="?android:attr/textViewStyle"
-        android:gravity="start"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="4dp"
-        android:layout_width="0dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginBottom="8dp"
-        android:text="Data"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toStartOf="@+id/gl_ver_2"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/briefDescription"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.347" />
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gl_ver_2"

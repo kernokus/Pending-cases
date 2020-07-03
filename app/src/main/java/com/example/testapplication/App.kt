@@ -3,6 +3,6 @@ import com.zeugmasolutions.localehelper.LocaleAwareApplication
 
 
 
-open class App:LocaleAwareApplication() {
 
+open class App:LocaleAwareApplication(){
 }

@@ -4,14 +4,14 @@
 
     <item>
         <inset
-            android:insetBottom="2dp"
-            android:insetLeft="2dp"
-            android:insetRight="2dp"
-            android:insetTop="2dp">
+            android:insetBottom="1dp"
+            android:insetLeft="1dp"
+            android:insetRight="1dp"
+            android:insetTop="1dp">
             <shape>
                 <stroke
-                    android:width="3dp"
-                    android:color="@color/yellow" />
+                    android:width="2dp"
+                    android:color="?borderDialogColor" />
                 <corners android:radius="@dimen/main_border_radius" />
                 <solid android:color="?android:attr/background" />
             </shape>

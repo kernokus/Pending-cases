@@ -1,17 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_name">TestApplication</string>
-    <string name="tasks">Задачи</string>
+    <string name="app_name">Отложенные дела</string>
     <string name="pending_cases">Отложенные дела</string>
     <string name="settings">Настройки</string>
-    <string name="title_activity_main2">MainActivity</string>
     <string name="language">Язык</string>
     <string name="Theme">Цветовая тема</string>
     <string name="cancel">Отменить</string>
     <string name="save">Сохранить</string>
     <string name="tittlePendingDialog">Определите ваше отложенное дело</string>
-    <string name="take_photo">Сделать фото</string>
-    <string name="cameraX">Камера</string>
     <string name="delete">Удалить</string>
     <string name="view_all_the_information">Просмотреть всю информацию</string>
     <string name="brief_description">Краткое описание</string>
@@ -23,4 +19,13 @@
     <string name="light_theme">Светлая тема</string>
     <string name="apply">Применить</string>
     <string name="requires_restarting_app_for_change_theme">Для изменения темы требуется перезапуск приложения</string>
+    <string name="aboutApp">О приложении</string>
+    <string name="appDescription">Все мы иногда имеем дела, которые хотим отложить на более поздний период жизни.
+        Это приложение предзначено для их хранения.
+        Контактные данные: tol1017@ya.ru
+    </string>
+    <string name="Description">Описание:</string>
+    <string name="your_pending_case">Ваше отложенное дело</string>
+    <string name="installData">Дата установки</string>
+    <string name="add_pending_case">Добавить отложенное дело</string>
 </resources>

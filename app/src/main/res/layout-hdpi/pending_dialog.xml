@@ -3,8 +3,8 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:background="@drawable/test"
-    android:layout_width="match_parent"
-    android:layout_height="350dp">
+    android:layout_width="270dp"
+    android:layout_height="300dp">
 
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gl_ver_2"
@@ -23,12 +23,12 @@
 
     <TextView
         android:id="@+id/title"
-        android:layout_width="300dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:gravity="center"
         android:fontFamily="serif"
-        android:textSize="20sp"
+        android:textSize="14sp"
         android:text="@string/tittlePendingDialog"
         android:textColor="?android:attr/textColor"
 
@@ -40,7 +40,7 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="300dp"
+        android:layout_width="250dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
@@ -63,17 +63,19 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/brief_description"
+        android:textSize="12sp"
         android:labelFor="@id/editText"
         app:layout_constraintBottom_toTopOf="@+id/editText"
-        app:layout_constraintStart_toStartOf="@+id/editText">
+        app:layout_constraintStart_toStartOf="@+id/editText"
+        app:layout_constraintTop_toBottomOf="@+id/title">
 
     </TextView>
 
     <EditText
         android:id="@+id/editText2"
         android:gravity="start|top"
-        android:layout_width="300dp"
-        android:layout_height="100dp"
+        android:layout_width="250dp"
+        android:layout_height="90dp"
         android:layout_marginStart="8dp"
         android:textColor="?android:attr/textColor"
         android:layout_marginEnd="8dp"
@@ -84,20 +86,18 @@
         android:inputType="text"
         app:layout_constraintHorizontal_bias="0.177"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editText"
         app:layout_constraintVertical_bias="1.0">
-
     </EditText>
 
     <TextView
         style="?android:attr/textViewStyle"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/full_description"
+        android:textSize="12sp"
         android:labelFor="@id/editText2"
         app:layout_constraintBottom_toTopOf="@+id/editText2"
         app:layout_constraintStart_toStartOf="@+id/editText2">
+
 
     </TextView>
 
@@ -105,6 +105,8 @@
         android:id="@+id/NoBtn"
         style="@style/btnDialog"
         android:text="@string/cancel"
+        android:textSize="12sp"
+        android:layout_width="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/gl_ver_2"
         app:layout_constraintTop_toTopOf="@+id/gl_hor_2" />
@@ -113,6 +115,8 @@
         android:id="@+id/YesBtn"
         style="@style/btnDialog"
         android:text="@string/save"
+        android:textSize="12sp"
+        android:layout_width="70dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.526"
