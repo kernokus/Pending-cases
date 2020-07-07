@@ -13,14 +13,15 @@ import androidx.camera.lifecycle.ProcessCameraProvider
 import androidx.core.app.ActivityCompat
 import androidx.core.content.ContextCompat
 import kotlinx.android.synthetic.main.activity_camera.*
-import timber.log.Timber
+
 import java.io.File
 import java.text.SimpleDateFormat
 import java.util.*
 import java.util.concurrent.ExecutorService
 import java.util.concurrent.Executors
 
-
+//не используется на данный момент в приложении
+//инициализация CameraX с функционалом сохранения фотографии в папку приложения
 class CameraXActivity:BaseActivity() {
     companion object {
         private const val FILENAME_FORMAT = "yyyy-MM-dd-HH-mm-ss-SSS"
@@ -87,7 +88,7 @@ class CameraXActivity:BaseActivity() {
                 )
                 preview?.setSurfaceProvider(viewFinder.createSurfaceProvider(camera?.cameraInfo))
             } catch (exc: Exception) {
-                Timber.e(exc, "Use case binding failed")
+
             }
 
         }, ContextCompat.getMainExecutor(this))

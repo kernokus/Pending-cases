@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView
 import butterknife.BindView
 import butterknife.ButterKnife
 import butterknife.OnClick
-import timber.log.Timber
+
 
 
 class AdapterPendingCases(private val values:ArrayList<PendingCase>):RecyclerView.Adapter<AdapterPendingCases.PendingCasesViewHolder>() {
@@ -42,7 +42,7 @@ class AdapterPendingCases(private val values:ArrayList<PendingCase>):RecyclerVie
 
          @OnClick(R.id.chooseMenu)
          fun deleteAndUpdate(view:View?) {
-             Timber.d("DEBUG CLICK")
+
              if (context!=null && view!=null) {
                  val popup: PopupMenu=PopupMenu(context!!, view) //проверить
                  popup.inflate(R.menu.pending_menu)

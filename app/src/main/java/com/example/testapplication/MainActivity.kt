@@ -1,20 +1,24 @@
 package com.example.testapplication
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.view.View
 import butterknife.ButterKnife
 import butterknife.OnClick
 
+
 class MainActivity : BaseActivity() {
+
     override fun onCreate(savedInstanceState: Bundle?) {
-        setTheme(R.style.AppThemeLight)
+        installTheme(THEME_COLOR)
+        Log.i("Настройки мэин", loadFromSP(THEME_COLOR))
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
-        ButterKnife.bind(this);
+        ButterKnife.bind(this)
+        Log.i("Настройки мэин2", loadFromSP(THEME_COLOR))
     }
 
-
-    @OnClick(R.id.constrain_pending_cases,R.id.constrain_tasks,R.id.constrain_settings,R.id.constrain_camera_x)
+    @OnClick(R.id.constrain_pending_cases,R.id.constrain_settings)
     fun clickItem(view: View?) {
         when(view?.id) {
             R.id.constrain_pending_cases -> {
@@ -25,14 +29,15 @@ class MainActivity : BaseActivity() {
                   val intentSettings = Intent(this, SettingsActivity::class.java)
                   startActivity(intentSettings)
               }
-            R.id.constrain_camera_x -> {
-                val intentSettings = Intent(this, CameraXActivity::class.java)
-                startActivity(intentSettings)
-
-            }
-
+//            R.id.constrain_camera_x -> {
+//                val intentSettings = Intent(this, CameraXActivity::class.java)
+//                startActivity(intentSettings)
+//
+//            }
             }
         }
+
+
     }
 
 

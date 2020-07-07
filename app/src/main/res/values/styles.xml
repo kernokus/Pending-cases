@@ -7,11 +7,11 @@
         <item name="android:colorPrimaryDark">@color/colorBlack</item>
         <item name="android:textViewStyle">@style/MainTextStyleDark</item>
         <item name="backgroundPendingCase">@drawable/test</item>
-
-
-
-
-
+        <item name="colorPrimary">@color/colorBlack</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorBlack</item>
+        <item name="underlinePendingCase">@color/yellow</item>
+        <item name="underlinePressingPendingCase">@color/red</item>
 
 
 
@@ -25,12 +25,41 @@
         <item name="android:colorPrimaryDark">@color/colorWhite</item>
         <item name="android:textViewStyle">@style/MainTextStyleLight</item>
         <item name="backgroundPendingCase">@drawable/test</item>
-
+        <item name="colorPrimary">@color/colorBlack</item>
+        <item name="colorPrimaryDark">@color/colorBlack</item>
+        <item name="colorAccent">@color/colorBlack</item>
+        <item name="underlinePendingCase">@color/yellow</item>
+        <item name="underlinePressingPendingCase">@color/red</item>
 
 
 
 
     </style>
+
+    <style name="btnDialog">
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:windowFullscreen">false</item>
+        <item name="android:textSize">12sp</item>
+        <item name="android:background">@drawable/style_main_buttons</item>
+        <item name="android:layout_marginBottom">10dp</item>
+        <item name="android:layout_marginRight">6dp</item>
+
+    </style>
+
+
+
+    <style name="LightDialog">
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColorPrimary">@color/colorBlack</item>
+        <item name="android:editTextColor">@color/colorBlack</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:windowFullscreen">false</item>
+
+
+    </style>
+
 
 
 

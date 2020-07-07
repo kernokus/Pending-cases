@@ -2,6 +2,9 @@
 <resources>
     <attr name="mainImageColor" format="reference|color" />
     <attr name="backgroundPendingCase" format="reference" />
+    <attr name="underlinePendingCase" format="reference|color" />
+    <attr name="underlinePressingPendingCase" format="reference|color" />
+
 
 
 

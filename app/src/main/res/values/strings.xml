@@ -21,5 +21,7 @@
     <string name="English">English</string>
     <string name="dark_theme">Dark</string>
     <string name="light_theme">Light</string>
+    <string name="apply">Apply</string>
+    <string name="requires_restarting_app_for_change_theme">Changing the theme requires restarting the app</string>
 
 </resources>

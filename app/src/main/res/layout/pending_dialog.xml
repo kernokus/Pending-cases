@@ -36,12 +36,14 @@
 
     <EditText
         android:id="@+id/editText"
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
         android:layout_marginEnd="8dp"
         android:maxLength="25"
+        android:background="@drawable/style_underline_edit_text"
         android:textSize="14sp"
+        android:textColor="?android:attr/textColor"
         app:layout_constraintBottom_toTopOf="@+id/gl_hor_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.177"
@@ -52,11 +54,12 @@
     </EditText>
 
     <TextView
+        style="?android:attr/textViewStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/brief_description"
-        android:textColor="@color/colorBlack"
+
         app:layout_constraintBottom_toTopOf="@+id/editText"
         app:layout_constraintStart_toStartOf="@+id/editText">
 
@@ -65,10 +68,12 @@
     <EditText
         android:id="@+id/editText2"
         android:gravity="start|top"
-        android:layout_width="350dp"
+        android:layout_width="300dp"
         android:layout_height="100dp"
         android:layout_marginStart="8dp"
+        android:textColor="?android:attr/textColor"
         android:layout_marginEnd="8dp"
+        android:background="@drawable/style_underline_edit_text"
         app:layout_constraintBottom_toTopOf="@+id/gl_hor_2"
         app:layout_constraintEnd_toEndOf="parent"
         android:textSize="14sp"
@@ -80,11 +85,12 @@
     </EditText>
 
     <TextView
+        style="?android:attr/textViewStyle"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="@string/full_description"
-        android:textColor="@color/colorBlack"
+
         app:layout_constraintBottom_toTopOf="@+id/editText2"
         app:layout_constraintStart_toStartOf="@+id/editText2">
 
@@ -92,27 +98,15 @@
 
     <Button
         android:id="@+id/NoBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
+        style="@style/btnDialog"
         android:text="@string/cancel"
-        android:background="@drawable/main_borders"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintStart_toStartOf="@+id/gl_ver_2"
         app:layout_constraintTop_toTopOf="@+id/gl_hor_2" />
 
     <Button
         android:id="@+id/YesBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-
-        android:layout_marginStart="8dp"
-        android:layout_marginLeft="8dp"
-        android:layout_marginEnd="8dp"
-
-        android:layout_marginRight="8dp"
-        android:background="@drawable/main_borders"
+        style="@style/btnDialog"
         android:text="@string/save"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
