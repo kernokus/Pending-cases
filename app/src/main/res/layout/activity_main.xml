@@ -26,7 +26,7 @@
         android:layout_height="wrap_content"
         android:text="@string/pending_cases"
         android:fontFamily="serif"
-        android:textSize="40sp"
+        android:textSize="35sp"
         app:layout_constraintBottom_toTopOf="@+id/gl_hor_2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
