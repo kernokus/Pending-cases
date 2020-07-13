@@ -28,4 +28,5 @@
     <string name="your_pending_case">Ваше отложенное дело</string>
     <string name="installData">Дата установки</string>
     <string name="add_pending_case">Добавить отложенное дело</string>
+    <string name="list_of_cases">Список дел</string>
 </resources>

@@ -26,5 +26,6 @@
     <string name="your_pending_case">Your pending case</string>
     <string name="installData">Installation date</string>
     <string name="add_pending_case">Add pending case</string>
+    <string name="list_of_cases">List of cases</string>
 
 </resources>

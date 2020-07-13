@@ -9,15 +9,33 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="235dp"
-        android:layout_height="251dp"
-        android:src="@drawable/ic_main_book"
+        android:id="@+id/imageView4"
+        android:layout_width="210dp"
+        android:layout_height="220dp"
+        android:src="@drawable/ic_logomain"
         app:layout_constraintBottom_toTopOf="@+id/gl_hor_2"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintHorizontal_bias="0.497"
 
-    </ImageView>
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.441" />
+
+    <TextView
+        style="?android:attr/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pending_cases"
+        android:fontFamily="serif"
+        android:textSize="26sp"
+        app:layout_constraintBottom_toTopOf="@+id/gl_hor_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.0">
+
+    </TextView>
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gl_hor_2"
         android:layout_width="wrap_content"

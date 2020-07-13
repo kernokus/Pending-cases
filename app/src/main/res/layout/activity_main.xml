@@ -9,15 +9,32 @@
     tools:context=".MainActivity">
 
     <ImageView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:id="@+id/imageView4"
+        android:layout_width="271dp"
+        android:layout_height="268dp"
+        android:src="@drawable/ic_logomain"
         app:layout_constraintBottom_toTopOf="@+id/gl_hor_2"
         app:layout_constraintEnd_toEndOf="parent"
+
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/ic_main_book">
+        app:layout_constraintVertical_bias="0.339" />
 
-    </ImageView>
+    <TextView
+        style="?android:attr/textViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/pending_cases"
+        android:fontFamily="serif"
+        android:textSize="40sp"
+        app:layout_constraintBottom_toTopOf="@+id/gl_hor_2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView4"
+        app:layout_constraintVertical_bias="0.0">
+
+    </TextView>
     <androidx.constraintlayout.widget.Guideline
         android:id="@+id/gl_hor_2"
         android:layout_width="wrap_content"
@@ -79,7 +96,7 @@
             app:srcCompat="@drawable/ic_pending_cases" />
         <TextView
             style="?android:attr/textViewStyle"
-            android:text="@string/pending_cases"
+            android:text="@string/list_of_cases"
             app:layout_constraintBottom_toTopOf="@+id/gl_hor_3_in_5_constraint"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
