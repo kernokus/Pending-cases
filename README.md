@@ -11,6 +11,6 @@
 2. Kotlin Android Extensions
 3. Inkscape
 
-<img src="https://github.com/kernokus/Pending-cases/blob/master/forGit.png" width="1400" height="590">
+<img src="https://github.com/kernokus/Pending-cases/blob/master/forGit.png" width="1650" height="590">
 
 
